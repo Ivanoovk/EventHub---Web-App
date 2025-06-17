@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EventHubApp.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "EventHubApp.GCommon": "1.0.0"
+        },
+        "runtime": {
+          "EventHubApp.Web.ViewModels.dll": {}
+        }
+      },
+      "EventHubApp.GCommon/1.0.0": {
+        "runtime": {
+          "EventHubApp.GCommon.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventHubApp.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventHubApp.GCommon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

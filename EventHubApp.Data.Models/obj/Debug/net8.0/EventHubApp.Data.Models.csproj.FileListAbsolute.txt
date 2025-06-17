@@ -1,0 +1,17 @@
+D:\EventHub - WebApp\EventHubApp.Data.Models\bin\Debug\net8.0\EventHubApp.Data.Models.deps.json
+D:\EventHub - WebApp\EventHubApp.Data.Models\bin\Debug\net8.0\EventHubApp.Data.Models.dll
+D:\EventHub - WebApp\EventHubApp.Data.Models\bin\Debug\net8.0\EventHubApp.Data.Models.pdb
+D:\EventHub - WebApp\EventHubApp.Data.Models\bin\Debug\net8.0\EventHubApp.Data.Common.dll
+D:\EventHub - WebApp\EventHubApp.Data.Models\bin\Debug\net8.0\EventHubApp.GCommon.dll
+D:\EventHub - WebApp\EventHubApp.Data.Models\bin\Debug\net8.0\EventHubApp.Data.Common.pdb
+D:\EventHub - WebApp\EventHubApp.Data.Models\bin\Debug\net8.0\EventHubApp.GCommon.pdb
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.csproj.AssemblyReference.cache
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.AssemblyInfoInputs.cache
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.AssemblyInfo.cs
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.csproj.CoreCompileInputs.cache
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHub.CBA23BE2.Up2Date
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.dll
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\refint\EventHubApp.Data.Models.dll
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.pdb
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\ref\EventHubApp.Data.Models.dll

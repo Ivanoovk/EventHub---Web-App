@@ -1,0 +1,11 @@
+D:\EventHub - WebApp\EventHubApp.GCommon\bin\Debug\net8.0\EventHubApp.GCommon.deps.json
+D:\EventHub - WebApp\EventHubApp.GCommon\bin\Debug\net8.0\EventHubApp.GCommon.dll
+D:\EventHub - WebApp\EventHubApp.GCommon\bin\Debug\net8.0\EventHubApp.GCommon.pdb
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.GeneratedMSBuildEditorConfig.editorconfig
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.AssemblyInfoInputs.cache
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.AssemblyInfo.cs
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.csproj.CoreCompileInputs.cache
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.dll
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\refint\EventHubApp.GCommon.dll
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.pdb
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\ref\EventHubApp.GCommon.dll
