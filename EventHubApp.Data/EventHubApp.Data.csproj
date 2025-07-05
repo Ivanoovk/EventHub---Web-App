@@ -18,11 +18,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EventHubApp.Data.Common\EventHubApp.Data.Common.csproj" />
+    <ProjectReference Include="..\EventHubApp.Data.Models\EventHubApp.Data.Models.csproj" />
     <ProjectReference Include="..\EventHubApp.GCommon\EventHubApp.GCommon.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
     <Folder Include="Migrations\" />
     <Folder Include="Repository\" />
     <Folder Include="Seeding\Dtos\" />

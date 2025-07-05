@@ -15,3 +15,4 @@ D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.M
 D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\refint\EventHubApp.Data.Models.dll
 D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.pdb
 D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\ref\EventHubApp.Data.Models.dll
+D:\EventHub - WebApp\EventHubApp.Data.Models\obj\Debug\net8.0\EventHubApp.Data.Models.sourcelink.json

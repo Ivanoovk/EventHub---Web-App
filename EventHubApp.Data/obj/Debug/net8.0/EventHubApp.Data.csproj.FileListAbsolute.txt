@@ -17,3 +17,6 @@ D:\EventHub - WebApp\EventHubApp.Data\obj\Debug\net8.0\refint\EventHubApp.Data.d
 D:\EventHub - WebApp\EventHubApp.Data\obj\Debug\net8.0\EventHubApp.Data.pdb
 D:\EventHub - WebApp\EventHubApp.Data\obj\Debug\net8.0\EventHubApp.Data.genruntimeconfig.cache
 D:\EventHub - WebApp\EventHubApp.Data\obj\Debug\net8.0\ref\EventHubApp.Data.dll
+D:\EventHub - WebApp\EventHubApp.Data\bin\Debug\net8.0\EventHubApp.Data.Models.dll
+D:\EventHub - WebApp\EventHubApp.Data\bin\Debug\net8.0\EventHubApp.Data.Models.pdb
+D:\EventHub - WebApp\EventHubApp.Data\obj\Debug\net8.0\EventHubApp.Data.sourcelink.json

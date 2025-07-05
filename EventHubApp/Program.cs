@@ -1,22 +1,45 @@
 namespace EventHubApp.Web
 {
     using EventHubApp.Data;
+    using EventHubApp.Services.Core;
+    using EventHubApp.Services.Core.Interfaces;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
     public class Program
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<EventHubAppDbContext>(options =>
-                options.UseSqlServer(connectionString));
+            
+            string connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            builder.Services
+                .AddDbContext<EventHubAppDbContext>(options =>
+                {
+                    options.UseSqlServer(connectionString);
+                    
+                });
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services
+                .AddDefaultIdentity<IdentityUser>(options =>
+                {
+                    options.SignIn.RequireConfirmedAccount = false;
+                    options.SignIn.RequireConfirmedEmail = false;
+                    options.SignIn.RequireConfirmedPhoneNumber = false;
+
+                    options.Password.RequiredLength = 3;
+                    options.Password.RequireNonAlphanumeric = false;
+                    options.Password.RequireDigit = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequiredUniqueChars = 0;
+                })
                 .AddEntityFrameworkStores<EventHubAppDbContext>();
+
+            builder.Services.AddScoped<IEventService, EventService>();
+            builder.Services.AddScoped<IWatchlistService, WatchlistService>();
+
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();

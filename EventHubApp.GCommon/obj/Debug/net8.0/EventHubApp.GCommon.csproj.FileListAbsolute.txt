@@ -9,3 +9,4 @@ D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.dl
 D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\refint\EventHubApp.GCommon.dll
 D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.pdb
 D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\ref\EventHubApp.GCommon.dll
+D:\EventHub - WebApp\EventHubApp.GCommon\obj\Debug\net8.0\EventHubApp.GCommon.sourcelink.json

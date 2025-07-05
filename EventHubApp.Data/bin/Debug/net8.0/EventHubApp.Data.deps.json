@@ -9,6 +9,7 @@
       "EventHubApp.Data/1.0.0": {
         "dependencies": {
           "EventHubApp.Data.Common": "1.0.0",
+          "EventHubApp.Data.Models": "1.0.0",
           "EventHubApp.GCommon": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.16",
@@ -1000,6 +1001,19 @@
           }
         }
       },
+      "EventHubApp.Data.Models/1.0.0": {
+        "dependencies": {
+          "EventHubApp.Data.Common": "1.0.0",
+          "EventHubApp.GCommon": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.16"
+        },
+        "runtime": {
+          "EventHubApp.Data.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "EventHubApp.GCommon/1.0.0": {
         "runtime": {
           "EventHubApp.GCommon.dll": {
@@ -1591,6 +1605,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "EventHubApp.Data.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventHubApp.Data.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

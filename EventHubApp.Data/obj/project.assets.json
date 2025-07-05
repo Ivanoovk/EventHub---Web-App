@@ -1600,6 +1600,21 @@
           "bin/placeholder/EventHubApp.Data.Common.dll": {}
         }
       },
+      "EventHubApp.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EventHubApp.Data.Common": "1.0.0",
+          "EventHubApp.GCommon": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.16"
+        },
+        "compile": {
+          "bin/placeholder/EventHubApp.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EventHubApp.Data.Models.dll": {}
+        }
+      },
       "EventHubApp.GCommon/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4238,6 +4253,11 @@
       "path": "../EventHubApp.Data.Common/EventHubApp.Data.Common.csproj",
       "msbuildProject": "../EventHubApp.Data.Common/EventHubApp.Data.Common.csproj"
     },
+    "EventHubApp.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../EventHubApp.Data.Models/EventHubApp.Data.Models.csproj",
+      "msbuildProject": "../EventHubApp.Data.Models/EventHubApp.Data.Models.csproj"
+    },
     "EventHubApp.GCommon/1.0.0": {
       "type": "project",
       "path": "../EventHubApp.GCommon/EventHubApp.GCommon.csproj",
@@ -4247,6 +4267,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "EventHubApp.Data.Common >= 1.0.0",
+      "EventHubApp.Data.Models >= 1.0.0",
       "EventHubApp.GCommon >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.16",
@@ -4288,6 +4309,9 @@
           "projectReferences": {
             "D:\\EventHub - WebApp\\EventHubApp.Data.Common\\EventHubApp.Data.Common.csproj": {
               "projectPath": "D:\\EventHub - WebApp\\EventHubApp.Data.Common\\EventHubApp.Data.Common.csproj"
+            },
+            "D:\\EventHub - WebApp\\EventHubApp.Data.Models\\EventHubApp.Data.Models.csproj": {
+              "projectPath": "D:\\EventHub - WebApp\\EventHubApp.Data.Models\\EventHubApp.Data.Models.csproj"
             },
             "D:\\EventHub - WebApp\\EventHubApp.GCommon\\EventHubApp.GCommon.csproj": {
               "projectPath": "D:\\EventHub - WebApp\\EventHubApp.GCommon\\EventHubApp.GCommon.csproj"
