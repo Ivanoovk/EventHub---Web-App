@@ -2235,6 +2235,8 @@
       },
       "EventHubApp.Web.ViewModels/1.0.0": {
         "dependencies": {
+          "EventHubApp.Data": "1.0.0",
+          "EventHubApp.Data.Common": "1.0.0",
           "EventHubApp.GCommon": "1.0.0"
         },
         "runtime": {

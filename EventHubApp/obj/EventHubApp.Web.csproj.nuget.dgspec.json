@@ -413,6 +413,12 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\EventHub - WebApp\\EventHubApp.Data.Common\\EventHubApp.Data.Common.csproj": {
+                "projectPath": "D:\\EventHub - WebApp\\EventHubApp.Data.Common\\EventHubApp.Data.Common.csproj"
+              },
+              "D:\\EventHub - WebApp\\EventHubApp.Data\\EventHubApp.Data.csproj": {
+                "projectPath": "D:\\EventHub - WebApp\\EventHubApp.Data\\EventHubApp.Data.csproj"
+              },
               "D:\\EventHub - WebApp\\EventHubApp.GCommon\\EventHubApp.GCommon.csproj": {
                 "projectPath": "D:\\EventHub - WebApp\\EventHubApp.GCommon\\EventHubApp.GCommon.csproj"
               }

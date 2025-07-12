@@ -306,3 +306,4 @@ D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.Models.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.Models.pdb
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Core.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Core.pdb
+D:\EventHub - WebApp\EventHubApp\obj\Debug\net8.0\EventHubApp.Web.MvcApplicationPartsAssemblyInfo.cs
