@@ -1,35 +1,39 @@
 ﻿
 
 using EventHubApp.Data;
+using EventHubApp.Data.Models;
 using EventHubApp.Services.Core.Interfaces;
 using EventHubApp.Web.ViewModels.Event;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 using static EventHubApp.GCommon.ApplicationConstants;
+
+using EventHubApp.Data.Repository.Interfaces;
 
 namespace EventHubApp.Services.Core
 {
     public class EventService : IEventService
     {
-        private readonly EventHubAppDbContext dbContext;
+        private readonly IEventRepository eventRepository;
 
-        public EventService(EventHubAppDbContext dbContext)
+        public EventService(IEventRepository eventRepository)
         {
-            this.dbContext = dbContext;
+            this.eventRepository = eventRepository;
         }
 
         public async Task<IEnumerable<AllEventsIndexViewModel>> GetAllEventsAsync()
         {
-            IEnumerable<AllEventsIndexViewModel> allEvents = await this.dbContext
-                .Events
+            IEnumerable<AllEventsIndexViewModel> allEvents = await this.eventRepository
+                .GetAllAttached()
                 .AsNoTracking()
-                .Select(e => new AllEventsIndexViewModel()
+                .Select(m => new AllEventsIndexViewModel()
                 {
-                    Id = e.Id.ToString(),
-                    Title = e.Title,
-                    Type = e.Type,
-                    ReleaseDate = e.ReleaseDate.ToString(AppDateFormat),
-                    Sponsor = e.Sponsor,
-                    ImageUrl = e.ImageUrl,
+                    Id = m.Id.ToString(),
+                    Title = m.Title,
+                    Type = m.Type,
+                    ReleaseDate = m.ReleaseDate.ToString(AppDateFormat),
+                    Sponsor = m.Sponsor,
+                    ImageUrl = m.ImageUrl,
                 })
                 .ToListAsync();
             foreach (AllEventsIndexViewModel eventt in allEvents)
@@ -42,5 +46,34 @@ namespace EventHubApp.Services.Core
 
             return allEvents;
         }
+
+
+        public async Task AddEventAsync(EventFormInputModel inputModel)
+        {
+            Event newEvent = new Event()
+            {
+                Title = inputModel.Title,
+                Type = inputModel.Type,
+                Sponsor = inputModel.Sponsor,
+                Description = inputModel.Description,
+                Duration = inputModel.Duration,
+                ImageUrl = inputModel.ImageUrl,
+                ReleaseDate = DateOnly
+                    .ParseExact(inputModel.ReleaseDate, AppDateFormat,
+                        CultureInfo.InvariantCulture, DateTimeStyles.None),
+            };
+
+            await this.eventRepository.AddAsync(newEvent);
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }

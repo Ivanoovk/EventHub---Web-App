@@ -8,7 +8,7 @@ namespace EventHubApp.Services.Core.Interfaces
     {
         Task<IEnumerable<AllEventsIndexViewModel>> GetAllEventsAsync();
 
-        //Task AddMovieAsync(MovieFormInputModel inputModel);
+        Task AddEventAsync(EventFormInputModel inputModel);
 
         //Task<MovieDetailsViewModel?> GetMovieDetailsByIdAsync(string? id);
 
