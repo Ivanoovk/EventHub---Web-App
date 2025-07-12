@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EventHubApp.Data.Common\EventHubApp.Data.Common.csproj" />
+    <ProjectReference Include="..\EventHubApp.Data\EventHubApp.Data.csproj" />
     <ProjectReference Include="..\EventHubApp.GCommon\EventHubApp.GCommon.csproj" />
   </ItemGroup>
 

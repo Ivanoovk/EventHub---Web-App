@@ -14,3 +14,9 @@ D:\EventHub - WebApp\EventHubApp.Web.ViewModels\obj\Debug\net8.0\refint\EventHub
 D:\EventHub - WebApp\EventHubApp.Web.ViewModels\obj\Debug\net8.0\EventHubApp.Web.ViewModels.pdb
 D:\EventHub - WebApp\EventHubApp.Web.ViewModels\obj\Debug\net8.0\ref\EventHubApp.Web.ViewModels.dll
 D:\EventHub - WebApp\EventHubApp.Web.ViewModels\obj\Debug\net8.0\EventHubApp.Web.ViewModels.sourcelink.json
+D:\EventHub - WebApp\EventHubApp.Web.ViewModels\bin\Debug\net8.0\EventHubApp.Data.Common.dll
+D:\EventHub - WebApp\EventHubApp.Web.ViewModels\bin\Debug\net8.0\EventHubApp.Data.dll
+D:\EventHub - WebApp\EventHubApp.Web.ViewModels\bin\Debug\net8.0\EventHubApp.Data.Models.dll
+D:\EventHub - WebApp\EventHubApp.Web.ViewModels\bin\Debug\net8.0\EventHubApp.Data.Common.pdb
+D:\EventHub - WebApp\EventHubApp.Web.ViewModels\bin\Debug\net8.0\EventHubApp.Data.pdb
+D:\EventHub - WebApp\EventHubApp.Web.ViewModels\bin\Debug\net8.0\EventHubApp.Data.Models.pdb
