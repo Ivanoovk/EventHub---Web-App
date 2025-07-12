@@ -11,6 +11,8 @@ namespace EventHubApp.Data.Common
             /// </summary>
             public const int TitleMaxLength = 100;
 
+            public const int TitleMinLength = 2;
+
             /// <summary>
             /// Type must be at least 3 characters.
             /// </summary>
@@ -56,5 +58,37 @@ namespace EventHubApp.Data.Common
             /// </summary>
             public const int ImageUrlMaxLength = 2048;
         }
+
+        public static class Places
+        {
+            /// <summary>
+            /// Place Name must be at least 2 characters.
+            /// </summary>
+            public const int NameMinLength = 2;
+
+            /// <summary>
+            /// Place Name should be able to store text with length up to 80 characters.
+            /// </summary>
+            public const int NameMaxLength = 80;
+
+            /// <summary>
+            /// Place Location must be at least 2 characters.
+            /// </summary>
+            public const int LocationMinLength = 2;
+
+            /// <summary>
+            /// Place Location should be able to store text with length up to 50 characters.
+            /// </summary>
+            public const int LocationMaxLength = 50;
+        }
+
+        public static class EventPlace
+        {
+            public const int AvailableTicketsDefaultValue = 0;
+            public const int ShowtimeMaxLength = 5;
+            public const string ShowtimeFormat = "{hh}:{mm}";
+        }
+
+
     }
 }
