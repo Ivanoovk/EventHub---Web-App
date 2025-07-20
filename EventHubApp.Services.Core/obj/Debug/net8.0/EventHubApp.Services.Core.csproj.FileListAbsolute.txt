@@ -1,9 +1,3 @@
-D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.csproj.AssemblyReference.cache
-D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.AssemblyInfoInputs.cache
-D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.AssemblyInfo.cs
-D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.csproj.CoreCompileInputs.cache
-D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.sourcelink.json
 D:\EventHub - WebApp\EventHubApp.Services.Core\bin\Debug\net8.0\EventHubApp.Services.Core.deps.json
 D:\EventHub - WebApp\EventHubApp.Services.Core\bin\Debug\net8.0\EventHubApp.Services.Core.dll
 D:\EventHub - WebApp\EventHubApp.Services.Core\bin\Debug\net8.0\EventHubApp.Services.Core.pdb
@@ -17,6 +11,12 @@ D:\EventHub - WebApp\EventHubApp.Services.Core\bin\Debug\net8.0\EventHubApp.Data
 D:\EventHub - WebApp\EventHubApp.Services.Core\bin\Debug\net8.0\EventHubApp.GCommon.pdb
 D:\EventHub - WebApp\EventHubApp.Services.Core\bin\Debug\net8.0\EventHubApp.Web.ViewModels.pdb
 D:\EventHub - WebApp\EventHubApp.Services.Core\bin\Debug\net8.0\EventHubApp.Data.Common.pdb
+D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.csproj.AssemblyReference.cache
+D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.AssemblyInfoInputs.cache
+D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.AssemblyInfo.cs
+D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.csproj.CoreCompileInputs.cache
+D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.sourcelink.json
 D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHub.F4C6761E.Up2Date
 D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\EventHubApp.Services.Core.dll
 D:\EventHub - WebApp\EventHubApp.Services.Core\obj\Debug\net8.0\refint\EventHubApp.Services.Core.dll

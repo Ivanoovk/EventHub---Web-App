@@ -10,16 +10,16 @@ namespace EventHubApp.Services.Core.Interfaces
 
         Task AddEventAsync(EventFormInputModel inputModel);
 
-        //Task<MovieDetailsViewModel?> GetMovieDetailsByIdAsync(string? id);
+        Task<EventDetailsViewModel?> GetEventDetailsByIdAsync(string? id);
 
-        //Task<MovieFormInputModel?> GetEditableMovieByIdAsync(string? id);
+        Task<EventFormInputModel?> GetEditableEventByIdAsync(string? id);
 
-        //Task<bool> EditMovieAsync(MovieFormInputModel inputModel);
+        Task<bool> EditEventAsync(EventFormInputModel inputModel);
 
-        //Task<DeleteMovieViewModel?> GetMovieDeleteDetailsByIdAsync(string? id);
+        Task<DeleteEventViewModel?> GetEventDeleteDetailsByIdAsync(string? id);
 
-        //Task<bool> SoftDeleteMovieAsync(string? id);
+        Task<bool> SoftDeleteEventAsync(string? id);
 
-        //Task<bool> DeleteMovieAsync(string? id);
+        Task<bool> DeleteEventAsync(string? id);
     }
 }

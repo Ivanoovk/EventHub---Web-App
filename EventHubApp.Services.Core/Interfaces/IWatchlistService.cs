@@ -7,9 +7,9 @@ namespace EventHubApp.Services.Core.Interfaces
     {
         Task<IEnumerable<WatchlistViewModel>> GetUserWatchlistAsync(string userId);
 
-        //Task<bool> AddMovieToUserWatchlistAsync(string? movieId, string? userId);
+        Task<bool> AddEventToUserWatchlistAsync(string? eventId, string? userId);
 
-        //Task<bool> RemoveMovieFromWatchlistAsync(string? movieId, string? userId);
+        Task<bool> RemoveEventFromWatchlistAsync(string? eventId, string? userId);
 
         Task<bool> IsEventAddedToWatchlist(string? eventId, string? userId);
     }
