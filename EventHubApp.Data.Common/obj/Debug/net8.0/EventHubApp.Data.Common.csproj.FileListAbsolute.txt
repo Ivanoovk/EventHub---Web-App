@@ -5,8 +5,8 @@ D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.C
 D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.Common.AssemblyInfoInputs.cache
 D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.Common.AssemblyInfo.cs
 D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.Common.csproj.CoreCompileInputs.cache
+D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.Common.sourcelink.json
 D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.Common.dll
 D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\refint\EventHubApp.Data.Common.dll
 D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.Common.pdb
 D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\ref\EventHubApp.Data.Common.dll
-D:\EventHub - WebApp\EventHubApp.Data.Common\obj\Debug\net8.0\EventHubApp.Data.Common.sourcelink.json

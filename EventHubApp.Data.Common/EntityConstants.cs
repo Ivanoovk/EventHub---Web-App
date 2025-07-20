@@ -59,7 +59,7 @@ namespace EventHubApp.Data.Common
             public const int ImageUrlMaxLength = 2048;
         }
 
-        public static class Places
+        public static class Place
         {
             /// <summary>
             /// Place Name must be at least 2 characters.
@@ -82,7 +82,7 @@ namespace EventHubApp.Data.Common
             public const int LocationMaxLength = 50;
         }
 
-        public static class EventPlace
+        public static class PlaceEvent
         {
             public const int AvailableTicketsDefaultValue = 0;
             public const int ShowtimeMaxLength = 5;
