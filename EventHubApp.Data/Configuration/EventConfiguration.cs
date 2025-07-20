@@ -141,73 +141,7 @@ namespace EventHubApp.Data.Configuration
                     Duration = 2,
                     Description = "Welcome to the sixth edition of Sofia Graffiti Battle, which this year will begin the transformation of the underpass at the entrance to South Park!",
                     ImageUrl = "https://cdn-az.allevents.in/events5/banners/2908baee49bb75a5e82e011b2abed4940932618e7e6050f188dd35340ee004ba-rimg-w1200-h600-dc8ebf2f-gmir?v=1750638902"
-                },
-                //new Event()
-                //{
-                //    Id = Guid.Parse("ab2c3213-48a7-41ea-9393-45c60ef813e6"),
-                //    Title = "",
-                //    Type = "Entertaining",
-                //    ReleaseDate = new DateOnly(2025, 07, 03),
-                //    Sponsor = "",
-                //    Duration = 190,
-                //    Description = "",
-                //    ImageUrl = ""
-                //},
-                //new Event()
-                //{
-                //    Id = Guid.Parse("844d9abd-104d-41ab-b14a-ce059779ad91"),
-                //    Title = "",
-                //    Type = "Entertaining",
-                //    ReleaseDate = new DateOnly(2025, 07, 03),
-                //    Sponsor = "",
-                //    Duration = 190,
-                //    Description = "",
-                //    ImageUrl = ""
-                //},
-                //new Event()
-                //{
-                //    Id = Guid.Parse("54082f99-023b-4d68-89ac-44c00a0958d0"),
-                //    Title = "",
-                //    Type = "Entertaining",
-                //    ReleaseDate = new DateOnly(2025, 07, 03),
-                //    Sponsor = "",
-                //    Duration = 190,
-                //    Description = "",
-                //    ImageUrl = ""
-                //},
-                //new Event()
-                //{
-                //    Id = Guid.Parse("bf9ff8b3-3209-4b18-9f4b-5172c45b73f9"),
-                //    Title = "",
-                //    Type = "Entertaining",
-                //    ReleaseDate = new DateOnly(2025, 07, 03),
-                //    Sponsor = "",
-                //    Duration = 190,
-                //    Description = "",
-                //    ImageUrl = ""
-                //},
-                //new Event()
-                //{
-                //    Id = Guid.Parse("e00208b1-cb12-4bd4-8ac1-36ab62f7b4c9"),
-                //    Title = "",
-                //    Type = "Entertaining",
-                //    ReleaseDate = new DateOnly(2025, 07, 03),
-                //    Sponsor = "",
-                //    Duration = 190,
-                //    Description = "",
-                //    ImageUrl = ""
-                //},
-                //new Event()
-                //{
-                //    Id = Guid.Parse("4491b6f5-2a11-4c4c-8c6b-c371f47d2152"),
-                //    Title = "",
-                //    Type = "Entertaining",
-                //    ReleaseDate = new DateOnly(2025, 07, 03),
-                //    Sponsor = "",
-                //    Duration = 190,
-                //    Description = "",
-                //    ImageUrl = ""
-                //}
+                }
 
             };
 

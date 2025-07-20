@@ -5,9 +5,9 @@ using EventHubApp.Data.Repository.Interfaces;
 
 namespace EventHubApp.Data.Repository
 {
-    public class PlaceRepository : BaseRepository<Place, Guid>, IPlaceRepository
+    public class TicketRepository : BaseRepository<Ticket, Guid>, ITicketRepository
     {
-        public PlaceRepository(EventHubAppDbContext dbContext)
+        public TicketRepository(EventHubAppDbContext dbContext)
             : base(dbContext)
         {
 

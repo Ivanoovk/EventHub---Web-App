@@ -16,6 +16,14 @@
 
         public virtual DbSet<ApplicationUserEvent> ApplicationUserEvents { get; set; } = null!;
 
+        public virtual DbSet<Place> Places { get; set; } = null!;
+
+        public virtual DbSet<PlaceEvent> PlacesEvents { get; set; } = null!;
+
+        public virtual DbSet<Ticket> Tickets { get; set; } = null!;
+
+        public virtual DbSet<Manager> Managers { get; set; } = null!;
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
