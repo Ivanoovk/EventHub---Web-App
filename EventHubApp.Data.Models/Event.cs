@@ -36,5 +36,7 @@ namespace EventHubApp.Data.Models
         public virtual ICollection<ApplicationUserEvent> UserWatchlists { get; set; }
             = new HashSet<ApplicationUserEvent>();
 
+        public virtual ICollection<PlaceEvent> EventProjections { get; set; }
+            = new HashSet<PlaceEvent>();
     }
 }
