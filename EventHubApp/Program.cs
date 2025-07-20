@@ -1,6 +1,8 @@
 namespace EventHubApp.Web
 {
     using EventHubApp.Data;
+    using EventHubApp.Data.Repository;
+    using EventHubApp.Data.Repository.Interfaces;
     using EventHubApp.Services.Core;
     using EventHubApp.Services.Core.Interfaces;
     using Microsoft.AspNetCore.Identity;
@@ -36,6 +38,10 @@ namespace EventHubApp.Web
                     options.Password.RequiredUniqueChars = 0;
                 })
                 .AddEntityFrameworkStores<EventHubAppDbContext>();
+
+
+            builder.Services.AddScoped<IEventRepository, EventRepository>();
+            builder.Services.AddScoped<IWatchlistRepository, WatchlistRepository>();
 
             builder.Services.AddScoped<IEventService, EventService>();
             builder.Services.AddScoped<IWatchlistService, WatchlistService>();

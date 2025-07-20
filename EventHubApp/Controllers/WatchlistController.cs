@@ -35,5 +35,66 @@ namespace EventHubApp.Web.Controllers
                 return this.RedirectToAction(nameof(Index), "Home");
             }
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Add(string? eventId)
+        {
+            try
+            {
+                string? userId = this.GetUserId();
+                if (userId == null)
+                {
+                    return this.Forbid();
+                }
+
+                bool result = await this.watchlistService
+                    .AddEventToUserWatchlistAsync(eventId, userId);
+                if (result == false)
+                {
+                    return this.RedirectToAction(nameof(Index), "Event");
+                }
+
+                return this.RedirectToAction(nameof(Index));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+
+                return this.RedirectToAction(nameof(Index), "Home");
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Remove(string? eventId)
+        {
+            try
+            {
+                string? userId = this.GetUserId();
+                if (userId == null)
+                {
+                    return this.Forbid();
+                }
+
+                bool result = await this.watchlistService
+                    .RemoveEventFromWatchlistAsync(eventId, userId);
+                if (result == false)
+                {
+                    return this.RedirectToAction(nameof(Index));
+                }
+
+                return this.RedirectToAction(nameof(Index), "Event");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+
+                return this.RedirectToAction(nameof(Index), "Home");
+            }
+        }
+
+
+
+
     }
 }

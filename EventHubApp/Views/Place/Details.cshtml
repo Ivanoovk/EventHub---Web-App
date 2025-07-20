@@ -1,0 +1,31 @@
+﻿﻿@using EventHubApp.Web.ViewModels.Place;
+@model PlaceDetailsViewModel
+
+@{
+    ViewData["Title"] = "Place Event Program";
+}
+
+<h2>@Model.Name - Place Event Program</h2>
+
+<p><strong>Location:</strong> @Model.Location</p>
+
+<h3>Events Currently Showing:</h3>
+
+@if (Model.Events.Any())
+{
+    <ul class="list-group">
+        @foreach (PlaceDetailsEventViewModel evennt in Model.Events)
+        {
+            <li class="list-group-item">
+                <strong>@evennt.Title</strong> <br />
+                <small>Duration: @evennt.Duration days</small>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No events are currently showing at this place.</p>
+}
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to Places</a>
