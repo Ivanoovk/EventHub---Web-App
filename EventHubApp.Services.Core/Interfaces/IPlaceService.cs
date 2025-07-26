@@ -6,7 +6,7 @@ namespace EventHubApp.Services.Core.Interfaces
 {
     public interface IPlaceService
     {
-        Task<IEnumerable<UsersPlaceIndexViewModel>> GetAllPLacesUserViewAsync();
+        Task<IEnumerable<UsersPlaceIndexViewModel>> GetAllPlacesUserViewAsync();
 
         Task<PlaceProgramViewModel?> GetPlaceProgramAsync(string? placeId);
 
