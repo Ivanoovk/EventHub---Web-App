@@ -1,0 +1,4 @@
+wwwroot/lib/** linguist-vendored
+wwwroot/bootstrap/** linguist-vendored
+lib/** linguist-vendored
+node_modules/** linguist-vendored
