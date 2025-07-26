@@ -42,9 +42,18 @@ namespace EventHubApp.Web
 
             builder.Services.AddScoped<IEventRepository, EventRepository>();
             builder.Services.AddScoped<IWatchlistRepository, WatchlistRepository>();
+            builder.Services.AddScoped<IManagerRepository, ManagerRepository>();
+            builder.Services.AddScoped<ITicketRepository, TicketRepository>();
+            builder.Services.AddScoped<IPlaceRepository, PlaceRepository>();
+            builder.Services.AddScoped<IPlaceEventRepository, PlaceEventRepository>();
 
             builder.Services.AddScoped<IEventService, EventService>();
             builder.Services.AddScoped<IWatchlistService, WatchlistService>();
+            builder.Services.AddScoped<ITicketService, TicketService>();
+            builder.Services.AddScoped<IManagerService, ManagerService>();
+            builder.Services.AddScoped<IProjectionService, ProjectionService>();
+            builder.Services.AddScoped<IPlaceService, PlaceService>();
+
 
             builder.Services.AddControllersWithViews();
 

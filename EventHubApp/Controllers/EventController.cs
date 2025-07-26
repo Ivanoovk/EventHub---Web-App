@@ -98,7 +98,6 @@ namespace EventHubApp.Web.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> DetailsPartial(string? id)
         {
-            // TODO: Refactor the functionality to use WebAPI
             try
             {
                 EventDetailsViewModel? eventDetails = await this.eventService
@@ -203,7 +202,6 @@ namespace EventHubApp.Web.Controllers
             {
                 if (!this.ModelState.IsValid)
                 {
-                    // TODO: Implement JS notifications
                     return this.RedirectToAction(nameof(Index));
                 }
 

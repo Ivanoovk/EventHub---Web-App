@@ -8,9 +8,6 @@
         .Distinct();
 }
 
-@section Styles {
-    <link rel="stylesheet" href="~/css/user.css">
-}
 
 <div class="">
     <div class="container mt-4">
@@ -21,19 +18,19 @@
             </a>
         </div>
 
-        <partial name="_PlaceSearchAndFilterPartial" model="cinemaLocations" /> @* !!!!!!!!!!!!!!!!!!!!! *@
+        @* <partial name="_PlaceSearchAndFilterPartial" model="cinemaLocations" /> *@ @* !!!!!!!!!!!!!!!!!!!!! *@
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3" id="placeContainer">
             @foreach (UsersPlaceIndexViewModel place in Model.Take(8))
             {
                 <div class="col place-card" data-city="@place.Location.ToLower()">
                     <div class="card shadow-lg border-0 rounded-3 h-100 place-index-card">
-                        <img src="~/images/place-panoramic-megeve.jpg"
+                        <img src="~/images/placeImage.jpg"
                              class="card-img-top"
                              alt="place.Name"
                              style="height: 160px; object-fit: cover; border-radius: 8px 8px 0 0;">
                         <div class="card-body text-center">
-                            <h6 class="card-title fw-bold text-dark">@place.Name</h6>
+                            <h6 class="card-title fw-bold text-white">@place.Name</h6>
                             <p class="card-text text-muted small"><i class="bi bi-geo-alt-fill"></i> @place.Location</p>
                             <a asp-controller="Place" asp-action="Program" asp-route-id="@place.Id"
                                class="btn btn-outline-primary btn-sm rounded-pill px-3">
@@ -57,6 +54,8 @@
         }
     </div>
 </div>
+
+<link rel="stylesheet" href="~/css/user.css">
 
 @* @section Scripts {
     <script src="~/js/cinemas.js"></script>

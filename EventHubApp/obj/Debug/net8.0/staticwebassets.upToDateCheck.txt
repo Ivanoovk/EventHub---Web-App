@@ -4,6 +4,7 @@ wwwroot\favicon.ico
 wwwroot\images\cocosBar.jpg
 wwwroot\images\liveFest.jpg
 wwwroot\images\no-image.jpg
+wwwroot\images\placeImage.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
