@@ -10,7 +10,7 @@ namespace EventHubApp.Data.Models
         [Comment("Foreign key to the referenced AspNetUser. Part of the entity composite PK.")]
         public string ApplicationUserId { get; set; } = null!;
 
-        public virtual IdentityUser ApplicationUser { get; set; } = null!;
+        public virtual ApplicationUser ApplicationUser { get; set; } = null!;
 
         [Comment("Foreign key to the referenced Event. Part of the entity composite PK.")]
         public Guid EventId { get; set; }
