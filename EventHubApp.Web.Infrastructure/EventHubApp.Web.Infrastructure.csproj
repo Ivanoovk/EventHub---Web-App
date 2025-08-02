@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventHubApp.Data\EventHubApp.Data.csproj" />
     <ProjectReference Include="..\EventHubApp.GCommon\EventHubApp.GCommon.csproj" />
+    <ProjectReference Include="..\EventHubApp.Services.Common\EventHubApp.Services.Common.csproj" />
+    <ProjectReference Include="..\EventHubApp.Services.Core\EventHubApp.Services.Core.csproj" />
   </ItemGroup>
 
 </Project>
