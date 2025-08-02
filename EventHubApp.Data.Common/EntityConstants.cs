@@ -89,6 +89,9 @@ namespace EventHubApp.Data.Common
             public const string ShowtimeFormat = "{hh}:{mm}";
         }
 
-
+        public static class Manager
+        {
+            public const int EmailMinLength = 5;
+        }
     }
 }
