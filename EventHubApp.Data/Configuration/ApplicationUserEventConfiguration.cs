@@ -24,7 +24,7 @@ namespace EventHubApp.Data.Configuration
 
             entity
                 .HasOne(aue => aue.ApplicationUser)
-                .WithMany() 
+                .WithMany(u => u.WatchlistEvents) 
                 .HasForeignKey(aue => aue.ApplicationUserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
@@ -35,11 +35,8 @@ namespace EventHubApp.Data.Configuration
                 .OnDelete(DeleteBehavior.Restrict);
 
             entity
-                .HasQueryFilter(aum => aum.Event.IsDeleted == false);
-
-
-            entity
-                .HasQueryFilter(aum => aum.IsDeleted == false);
+                .HasQueryFilter(aue => aue.IsDeleted == false &&
+                                                        aue.Event.IsDeleted == false);
         }
     }
 }
