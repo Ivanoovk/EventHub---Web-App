@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubApp.Services.Core",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubApp.Services.Common", "EventHubApp.Services.Common\EventHubApp.Services.Common.csproj", "{B960B1B0-6A0C-4EAB-C0B0-BDA05CCB576C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubApp.Web.Infrastructure", "EventHubApp.Web.Infrastructure\EventHubApp.Web.Infrastructure.csproj", "{C2280402-0206-AF2A-5876-5EDBE06B55EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{B960B1B0-6A0C-4EAB-C0B0-BDA05CCB576C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B960B1B0-6A0C-4EAB-C0B0-BDA05CCB576C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B960B1B0-6A0C-4EAB-C0B0-BDA05CCB576C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2280402-0206-AF2A-5876-5EDBE06B55EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2280402-0206-AF2A-5876-5EDBE06B55EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2280402-0206-AF2A-5876-5EDBE06B55EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2280402-0206-AF2A-5876-5EDBE06B55EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{88B15F5D-6F35-2D06-304E-29B5A1B69FB6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{E5B80A72-7F88-00E5-C359-4CF8A121A739} = {C8347219-1C67-45B6-BD1E-00FD5DDFF94C}
 		{B960B1B0-6A0C-4EAB-C0B0-BDA05CCB576C} = {C8347219-1C67-45B6-BD1E-00FD5DDFF94C}
+		{C2280402-0206-AF2A-5876-5EDBE06B55EF} = {E9F39ADB-1A77-4205-8E24-7396BC55CF78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E01D5365-332F-4A49-8820-58BFB761EB89}
