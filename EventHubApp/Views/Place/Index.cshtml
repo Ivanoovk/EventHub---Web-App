@@ -3,8 +3,8 @@
 
 @{
     ViewData["Title"] = "Explore Places";
-    IEnumerable<string> cinemaLocations = Model
-        .Select(c => c.Location)
+    IEnumerable<string> placeLocations = Model
+        .Select(p => p.Location)
         .Distinct();
 }
 
@@ -18,7 +18,8 @@
             </a>
         </div>
 
-        @* <partial name="_PlaceSearchAndFilterPartial" model="cinemaLocations" /> *@ @* !!!!!!!!!!!!!!!!!!!!! *@
+        <partial name="_PlaceSearchAndFilterPartial"
+				 model="placeLocations" /> 
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3" id="placeContainer">
             @foreach (UsersPlaceIndexViewModel place in Model.Take(8))
@@ -56,8 +57,8 @@
 </div>
 
 <link rel="stylesheet" href="~/css/user.css">
+<link rel="stylesheet" href="~/css/place.css" asp-append-version="true" />
 
-@* @section Scripts {
-    <script src="~/js/cinemas.js"></script>
-    <script src="~/js/pagination.js"></script>
-} *@
+@section Scripts {
+    <script src="~/js/place.js"></script>
+}

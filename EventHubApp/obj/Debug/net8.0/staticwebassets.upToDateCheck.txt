@@ -5,7 +5,11 @@ wwwroot\images\cocosBar.jpg
 wwwroot\images\liveFest.jpg
 wwwroot\images\no-image.jpg
 wwwroot\images\placeImage.jpg
+wwwroot\js\byTickets.js
+wwwroot\js\event.js
+wwwroot\js\place.js
 wwwroot\js\site.js
+wwwroot\js\userManagement.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

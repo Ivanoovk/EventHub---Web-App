@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="~/css/user.css">
 }
 
-<div class="cinema-bg bg-dark text-light">
+<div class="place-bg bg-dark text-light">
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h1 class="text-light fw-bold">Now Showing @@ @Model.PlaceData</h1>
-            <a asp-controller="Cinema" asp-action="Index" class="btn btn-secondary fw-bold">
-                <i class="bi bi-arrow-left"></i> Back to Cinemas
+            <a asp-controller="Place" asp-action="Index" class="btn btn-secondary fw-bold">
+                <i class="bi bi-arrow-left"></i> Back to Places
             </a>
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3" id="movieContainer">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3" id="eventContainer">
             @foreach (PlaceProgramEventViewModel evennt in Model.Events)
             {
                 <div class="col event-card">
-                    <div class="card shadow-lg border-0 rounded-3 h-100 cinema-program-card p-3">
+                    <div class="card shadow-lg border-0 rounded-3 h-100 place-program-card p-3">
                         <img src="@evennt.ImageUrl"
-                             class="movie-card-img-top img-fluid rounded"
+                             class="event-card-img-top img-fluid rounded"
                              alt="@evennt.Title"
                              style="height: 250px; object-fit: cover;">
 
                         <div class="card-body text-center">
-                            <h6 class="card-title fw-bold text-dark">@evennt.Title</h6>
+                            <h6 class="card-title fw-bold text-white">@evennt.Title</h6>
                             <p class="card-text text-muted small">Sponsor: @evennt.Sponsor</p>
 
                             <div class="d-flex flex-column gap-2 mt-3">
                                 <button class="btn btn-primary rounded-pill view-details-btn fw-bold"
-                                        data-movie-id="@evennt.Id">
+                                        data-event-id="@evennt.Id">
                                     <i class="fas fa-eye"></i> View Details
                                 </button>
 
@@ -82,9 +82,9 @@
     </div>
 </div>
 
-@* @section Scripts {
-    <script src="~/js/movies.js"></script>
-    <script src="~/js/pagination.js"></script>
-} *@
+@section Scripts {
+    <script src="~/js/event.js"></script>
+    <script src="~/js/buyTickets.js"></script>
+}
 
 <partial name="_BuyTicketModalPartial" />

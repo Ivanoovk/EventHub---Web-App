@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -21,10 +21,12 @@
     <ProjectReference Include="..\EventHubApp.Data\EventHubApp.Data.csproj" />
     <ProjectReference Include="..\EventHubApp.GCommon\EventHubApp.GCommon.csproj" />
     <ProjectReference Include="..\EventHubApp.Services.Core\EventHubApp.Services.Core.csproj" />
-    <ProjectReference Include="..\EventHubApp.Web.ViewModels\EventHubApp.Web.ViewModels.csproj" />
+    <ProjectReference Include="..\EventHubApp.Web.Infrastructure\EventHubApp.Web.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 

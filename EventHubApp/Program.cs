@@ -5,6 +5,7 @@ namespace EventHubApp.Web
     using EventHubApp.Data.Repository.Interfaces;
     using EventHubApp.Services.Core;
     using EventHubApp.Services.Core.Interfaces;
+    using EventHubApp.Web.Infrastructure.Middlewares;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
     public class Program
@@ -76,7 +77,11 @@ namespace EventHubApp.Web
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+            app.UseMiddleware<ManagerAccessRestrictionMiddleware>();
+            app.UseMiddleware<AdminRedirectionMiddleware>();
+
 
             app.MapControllerRoute(
                 name: "default",
