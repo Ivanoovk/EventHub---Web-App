@@ -1,14 +1,16 @@
 ﻿
 
-using EventHubApp.Data;
+using System.Globalization;
+
+using Microsoft.EntityFrameworkCore;
+
 using EventHubApp.Data.Models;
+using EventHubApp.Data.Repository.Interfaces;
 using EventHubApp.Services.Core.Interfaces;
 using EventHubApp.Web.ViewModels.Event;
-using Microsoft.EntityFrameworkCore;
-using System.Globalization;
+
 using static EventHubApp.GCommon.ApplicationConstants;
 
-using EventHubApp.Data.Repository.Interfaces;
 
 namespace EventHubApp.Services.Core
 {
