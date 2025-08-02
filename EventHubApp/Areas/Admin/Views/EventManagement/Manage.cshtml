@@ -1,0 +1,75 @@
+﻿﻿@using EventHubApp.Web.ViewModels.Admin.EventManagement
+@model IEnumerable<EventManagementIndexViewModel>
+
+@{
+    ViewData["Title"] = "Manage Events";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center text-warning fw-bold">Manage Events</h1>
+    <p class="text-center text-muted">View, edit, or delete event entries.</p>
+
+    <div class="d-flex justify-content-between mb-3">
+        <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-secondary fw-bold">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+        <a asp-action="Create" class="btn btn-success fw-bold shadow-lg">
+            <i class="bi bi-plus-circle"></i> Add New Event
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center" role="alert">
+            <i class="bi bi-exclamation-circle"></i> No events available. Click "Add New Event" to create one.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-dark table-hover shadow-lg rounded-3">
+                <thead class="thead-light">
+                    <tr class="text-warning text-center">
+                        <th scope="col">Title</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Sponsor</th>
+                        <th scope="col">Release Date</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (EventManagementIndexViewModel eventt in Model)
+                    {
+                        <tr class="align-middle text-center @(eventt.IsDeleted ? "table-danger" : "")">
+                            <td class="fw-bold">
+                                @eventt.Title
+                                @if (eventt.IsDeleted)
+                                {
+                                    <span class="badge bg-danger ms-2">Deleted</span>
+                                }
+                            </td>
+                            <td>@eventt.Type</td>
+                            <td>@eventt.Duration min</td>
+                            <td>@eventt.Sponsor</td>
+                            <td>@eventt.ReleaseDate</td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a asp-action="Edit" asp-route-id="@eventt.Id" class="btn btn-primary btn-sm fw-bold">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </a>
+
+                                    <a asp-action="ToggleDelete" asp-route-id="@eventt.Id" class="btn @(eventt.IsDeleted ? "btn-warning" : "btn-danger") btn-sm fw-bold">
+                                        <i class="bi @(eventt.IsDeleted ? "bi-arrow-clockwise" : "bi-trash")"></i>
+                                        @(eventt.IsDeleted ? "Restore" : "Delete")
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

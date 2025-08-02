@@ -1,0 +1,71 @@
+﻿﻿@using EventHubApp.Web.ViewModels.Admin.PlaceManagement
+@model IEnumerable<PlaceManagementIndexViewModel>
+
+@{
+    ViewData["Title"] = "Manage Places";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center text-warning fw-bold">Manage Places</h1>
+    <p class="text-center text-muted">View, edit, or delete place entries.</p>
+
+    <div class="d-flex justify-content-between mb-3">
+        <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-secondary fw-bold">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+        <a asp-action="Create" class="btn btn-success fw-bold shadow-lg">
+            <i class="bi bi-plus-circle"></i> Add New PLace
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center" role="alert">
+            <i class="bi bi-exclamation-circle"></i> No places available. Click "Add New Place" to create one.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-dark table-hover shadow-lg rounded-3">
+                <thead class="thead-light">
+                    <tr class="text-warning text-center">
+                        <th scope="col">Name</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Manager</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PlaceManagementIndexViewModel place in Model)
+                    {
+                        <tr class="align-middle text-center @(place.IsDeleted ? "table-danger" : "")">
+                            <td class="fw-bold">
+                                @place.Name
+                                @if (place.IsDeleted)
+                                {
+                                    <span class="badge bg-danger ms-2">Deleted</span>
+                                }
+                            </td>
+                            <td>@place.Location</td>
+                            <td>@place.ManagerName</td>
+                            <td>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a asp-action="Edit" asp-route-id="@place.Id" class="btn btn-primary btn-sm fw-bold">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </a>
+
+                                    <a asp-action="ToggleDelete" asp-route-id="@place.Id" class="btn @(place.IsDeleted ? "btn-warning" : "btn-danger") btn-sm fw-bold">
+                                        <i class="bi @(place.IsDeleted ? "bi-arrow-clockwise" : "bi-trash")"></i>
+                                        @(place.IsDeleted ? "Restore" : "Delete")
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

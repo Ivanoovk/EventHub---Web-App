@@ -271,13 +271,17 @@ D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.Common.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.Models.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.GCommon.dll
+D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Common.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Core.dll
+D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Web.Infrastructure.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Web.ViewModels.dll
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.pdb
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.GCommon.pdb
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Core.pdb
+D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Web.Infrastructure.pdb
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.Common.pdb
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Data.Models.pdb
+D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Common.pdb
 D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Web.ViewModels.pdb
 D:\EventHub - WebApp\EventHubApp\obj\Debug\net8.0\EventHubApp.Web.csproj.AssemblyReference.cache
 D:\EventHub - WebApp\EventHubApp\obj\Debug\net8.0\rpswa.dswa.cache.json
@@ -307,7 +311,3 @@ D:\EventHub - WebApp\EventHubApp\obj\Debug\net8.0\refint\EventHubApp.Web.dll
 D:\EventHub - WebApp\EventHubApp\obj\Debug\net8.0\EventHubApp.Web.pdb
 D:\EventHub - WebApp\EventHubApp\obj\Debug\net8.0\EventHubApp.Web.genruntimeconfig.cache
 D:\EventHub - WebApp\EventHubApp\obj\Debug\net8.0\ref\EventHubApp.Web.dll
-D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Common.dll
-D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Web.Infrastructure.dll
-D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Web.Infrastructure.pdb
-D:\EventHub - WebApp\EventHubApp\bin\Debug\net8.0\EventHubApp.Services.Common.pdb
