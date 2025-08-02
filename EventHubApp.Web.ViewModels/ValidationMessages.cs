@@ -33,5 +33,16 @@ namespace EventHubApp.Web.ViewModels
             public const string ServiceCreateError =
                 "Fatal error occurred while adding your event! Please try again later!";
         }
+
+        public static class Place
+        {
+            public const string NameRequiredMessage = "Place name is required.";
+            public const string NameMinLengthMessage = "Place name must be at least 2 characters.";
+            public const string NameMaxLengthMessage = "Place name cannot exceed 80 characters.";
+
+            public const string LocationRequiredMessage = "Place location is required.";
+            public const string LocationMinLengthMessage = "Place location must be at least 2 characters.";
+            public const string LocationMaxLengthMessage = "Place location cannot exceed 50 characters.";
+        }
     }
 }

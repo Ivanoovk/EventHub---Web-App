@@ -10,7 +10,7 @@ namespace EventHubApp.Web.ViewModels.Event
 {
     public class EventFormInputModel
     {
-        // Id will be validated in the corresponding Service method
+        
         public string Id { get; set; }
             = string.Empty;
 
