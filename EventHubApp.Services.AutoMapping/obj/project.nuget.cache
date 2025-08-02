@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y/Y2/FKTSSk=",
+  "success": true,
+  "projectFilePath": "D:\\EventHub - WebApp\\EventHubApp.Services.AutoMapping\\EventHubApp.Services.AutoMapping.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ki78k\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
+    "C:\\Users\\ki78k\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ki78k\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\ki78k\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
