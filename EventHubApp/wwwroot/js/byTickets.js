@@ -24,11 +24,14 @@ $(document).ready(function () {
         $("#buyTicketModalLabel").html(`Buy Ticket - ${placeName} <br><small class="text-muted">${eventName}</small>`);
 
         $.ajax({
-            url: "https://localhost:7165/CinemaMovieApi/Showtimes", /*!!!!!!!!!!!!!!!*/
+            url: "https://localhost:7172/PlaceEventApi/Showtimes", /*!!!!!!!!!!!!!!!*/
             method: "GET",
             data: {
                 placeId: placeId,
                 eventId: eventId,
+            },
+            xhrFields: {
+                withCredentials: true 
             },
             success: function (showtimes) {
                 console.log("Success Response:", showtimes); // ✅ Log the success response
@@ -74,12 +77,15 @@ $(document).ready(function () {
             $("#availableTicketsDiv").prop("hidden", false);
 
             $.ajax({
-                url: "https://localhost:7165/CinemaMovieApi/AvailableTickets", /*!!!!!!!!!!!!!!*/
+                url: "https://localhost:7172/PlaceEventApi/AvailableTickets", /*!!!!!!!!!!!!!!*/
                 method: "GET",
                 data: {
                     placeId: placeId,
                     eventId: eventId,
                     showtime: selectedVal,
+                },
+                xhrFields: {
+                    withCredentials: true
                 },
                 success: function (availableTicketsCount) {
                     console.log("Success Response:", availableTicketsCount); // ✅ Log the success response

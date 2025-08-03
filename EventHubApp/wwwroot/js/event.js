@@ -21,7 +21,7 @@
             event.preventDefault();
 
             let eventId = this.getAttribute("data-event-id");
-            console.log(`🎬 Fetching details for event ID: ${eventId}`);
+            console.log(`Fetching details for event ID: ${eventId}`);
 
             fetch(`/Event/DetailsPartial/${eventId}`)
                 .then(response => {
