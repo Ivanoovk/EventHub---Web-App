@@ -41,10 +41,10 @@
                                 @if (User.Identity is { IsAuthenticated: true } && !User.IsInRole("Admin"))
                                 {
                                     <button class="btn btn-outline-success rounded-pill buy-ticket-btn fw-bold"
-                                            data-cinema-id="@Model.PlaceId"
-                                            data-cinema-name="@Model.PlaceName"
-                                            data-movie-id="@evennt.Id"
-                                            data-movie-name="@evennt.Title">
+                                            data-place-id="@Model.PlaceId"
+                                            data-place-name="@Model.PlaceName"
+                                            data-event-id="@evennt.Id"
+                                            data-event-name="@evennt.Title">
                                         <i class="fas fa-ticket-alt"></i> Buy Ticket
                                     </button>
                                 }
@@ -84,7 +84,7 @@
 
 @section Scripts {
     <script src="~/js/event.js"></script>
-    <script src="~/js/buyTickets.js"></script>
+    <script src="~/js/byTickets.js"></script>
 }
 
-<partial name="_BuyTicketModalPartial" />
+<partial name="_BuyTicketModalPartial"/>
