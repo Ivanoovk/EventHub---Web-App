@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventHubApp.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae6e29a1c0d435f15c1e6874f0367e29911e70cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc002f16d97f6ccc0359ac82f70c1045098b1ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventHubApp.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventHubApp.Web.ViewModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
