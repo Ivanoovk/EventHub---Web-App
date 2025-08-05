@@ -1,1 +1,2 @@
-EventHubApp/wwwroot/lib/bootstrap/** linguist-vendored
+wwwroot/lib/* linguist-vendored
+wwwroot/js/bootstrap* linguist-vendored
